@@ -43,3 +43,8 @@ console.log(age + 1);
 // Uncaught SyntaxError: Identifier 'firstName' has already been declared (at variables.js:43:7)
 
 // const firstName = "Vitalii";
+
+// 3 Task
+
+const message = `My name is ${firstName} ${lastName}. I am ${age} years old. I live in ${city}. My hobby is ${hobby}. I was born in ${birthYear}. My favorite color is ${favoriteColor}.`;
+console.log(message);
