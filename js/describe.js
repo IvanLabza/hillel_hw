@@ -1,7 +1,5 @@
 "use strict";
 
-"use strict";
-
 const describe = (value) => {
   let type =
     value === null
