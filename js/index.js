@@ -59,6 +59,9 @@ console.log(productPositive);
 // task 10
 
 const maxPositive = Math.max(...positiveNumbers);
+
+// arr=[maxPositive];
+
 const maxIndex = arr.indexOf(maxPositive);
 
 for (let i = 0; i < arr.length; i++) {
