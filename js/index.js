@@ -6,66 +6,65 @@ const arr = [
 ];
 
 // task 1
-
 const positiveNumbers = arr.filter((num) => num > 0);
 const positiveSum = positiveNumbers.reduce((sum, num) => sum + num, 0);
-console.log(positiveNumbers, positiveSum);
+
+console.log("Сума:", positiveSum);
+console.log("Кількість:", positiveNumbers.length);
 
 // task 2
+const min = Math.min(...arr);
+const minIndex = arr.indexOf(min);
 
-const minPositive = Math.min(...positiveNumbers);
-const minPositiveIndex = arr.indexOf(minPositive);
-console.log(minPositive, minPositiveIndex);
+console.log("Мінімальний:", min);
+console.log("Індекс:", minIndex);
 
 // task 3
+const max = Math.max(...arr);
+const maxIndex = arr.indexOf(max);
 
-const maxNegative = Math.max(...arr.filter((num) => num < 0));
-const maxNegativeIndex = arr.indexOf(maxNegative);
-console.log(maxNegative, maxNegativeIndex);
+console.log("Максимальний:", max);
+console.log("Індекс:", maxIndex);
 
 // task 4
-
 const negativeNumbers = arr.filter((num) => num < 0);
-console.log(negativeNumbers);
+
+console.log("Кількість від'ємних:", negativeNumbers.length);
 
 // task 5
-
 const oddPositiveNumbers = arr.filter((num) => num > 0 && num % 2 !== 0);
-console.log(oddPositiveNumbers);
+
+console.log("Кількість непарних позитивних:", oddPositiveNumbers.length);
 
 // task 6
-
 const evenPositiveNumbers = arr.filter((num) => num > 0 && num % 2 === 0);
-console.log(evenPositiveNumbers);
+
+console.log("Кількість парних позитивних:", evenPositiveNumbers.length);
 
 // task 7
-
 const sumEvenPositive = evenPositiveNumbers.reduce((sum, num) => sum + num, 0);
-console.log(sumEvenPositive);
+
+console.log("Сума парних позитивних:", sumEvenPositive);
 
 // task 8
-
 const sumOddPositive = oddPositiveNumbers.reduce((sum, num) => sum + num, 0);
-console.log(sumOddPositive);
 
-//task 9
+console.log("Сума непарних позитивних:", sumOddPositive);
 
+// task 9
 const productPositive = positiveNumbers.reduce(
   (product, num) => product * num,
   1,
 );
-console.log(productPositive);
+
+console.log("Добуток позитивних:", productPositive);
 
 // task 10
-
 const maxPositive = Math.max(...positiveNumbers);
-
-// arr=[maxPositive];
-
-const maxIndex = arr.indexOf(maxPositive);
+const maxPositiveIndex = arr.indexOf(maxPositive);
 
 for (let i = 0; i < arr.length; i++) {
-  if (i !== maxIndex) {
+  if (i !== maxPositiveIndex) {
     arr[i] = 0;
   }
 }
