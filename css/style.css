@@ -1,0 +1,13 @@
+.list li {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.list li.selected {
+  background-color: lightgreen;
+}
+
+.list li button {
+  margin-left: 10px;
+  cursor: pointer;
+}
