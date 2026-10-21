@@ -1,0 +1,20 @@
+.cards-container {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card.expanded {
+  background-color: #f0f6ff;
+}
+
+.long-text[hidden] {
+  display: none;
+}
